@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TinDog</title>
+  <!-- Favicon title -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&family=Ubuntu&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- File CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Bootstrap scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- Icons Font Awesome -->
+  <script src="https://kit.fontawesome.com/aadf0a242f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- Title -->
+
+  <section id="title">
+  
+  <div class="container-fluid">
+    
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="">Tindog</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="">Contactos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Precios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Descargas</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Title -->
+
+    <!-- Para aplicar el grid de bootstrap es necesario que todos los div esten en una misma fila. 
+    Para pantallas grandes como la de un PC (col-lg-6 significa que se va a dividir la fila en 
+    12/6=2 columnas) -->
+
+    <div class="row">
+      <div class="col-lg-6">
+        <h1>Conozca nuevos e interesantes perros cerca de ti.</h1>
+        <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-android"></i> Descarga</button>
+        <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Descarga</button>
+      </div>
+      <div class="col-lg-6">
+        <img class="title-image" src="images/iphone6.png" alt="iphone-mockup">
+      </div>
+    </div>
+    
+  </div>
+
+  </section>
+
+  <!-- Features -->
+
+  <section id="features">
+
+    <!-- Para aplicar el grid de bootstrap es necesario que todos los div esten en una misma fila. 
+    Para pantallas grandes como la de un PC (col-lg-4 significa que se va a dividir la fila en 
+    12/4=3 columnas) -->
+
+    <div class="row">
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-check-circle fa-4x"></i>
+        <h3>Fácil de usar.</h3>
+        <p>Es tan fácil de usar que hasta tu perro podría hacerlo.</p>
+      </div>
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-bullseye fa-4x"></i>
+        <h3>Clientela de élite.</h3>
+        <p>Tenemos todos los perros, los mejores perros.</p>
+      </div>
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-heart fa-4x"></i>
+        <h3>Se garantiza su funcionamiento.</h3>
+        <p>Encuentre el amor de la vida de su perro o le devolvemos su dinero.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+    
+    <!--primero es un div que tiene el id del carrusel (id unico en la pagina)
+    luego siguen las clases personalizadas de bootstrap:
+    carousel slide => este div va a ser un carrusel y animar los slides a la derecha
+    o a la izquierda 
+    data-ride => significa que no va a moverse automaticamente sino cuando se le de a los botones
+    el div de carousel-inner es el que va a contener todos los elementos del carrusel, tres
+    elementos (slides) que se desean mostrar. Luego, sigue el elemento <a> que va a representar
+    los botones de derecha izquierda (tienen un span para el icono de los botones) -->
+
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>Ya no tengo que olfatear a otros perros en busca de amor. He encontrado el Corgi más caliente en TinDog. Guau.</h2>
+          <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+          <em>Pebbles, New York.</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">Mi perro solía ser tan solitario, pero con la ayuda de TinDog, ha encontrado el amor de su vida. Yo creo.</h2>
+          <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- Press -->
+
+  <section id="press">
+    
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2>Un plan para las necesidades de cada perro</h2>
+    <p>Planes de precios sencillos y asequibles para usted y su perro.</p>
+
+    <div class="row">
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Chihuahua</h3>
+          </div>
+          <div class="card-body">
+            <h2>Gratis</h2>
+            <p>5 Matches Por Día</p>
+            <p>10 Mensajes Por Día</p>
+            <p>Uso ilimitado de la aplicación</p>
+            <!-- se le agrega la clase btn de bootstrap, se indica que debe ser grande, que debe 
+            ser del tamaño de card y que cuando se pase el cursor cambia a un color oscuro -->
+            <button type="button" class="btn btn-lg btn-block btn-outline-dark">Inscríbete</button>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Labrador</h3>
+          </div>
+          <div class="card-body">
+            <h2>$49 / mes</h2>
+            <p>Matches Ilimitados</p>
+            <p>Mensajes Ilimitados</p>
+            <p>Uso ilimitado de la aplicación</p>
+            <button class="btn btn-lg btn-block btn-dark" type="button">Inscríbete</button>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-column col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Mastiff</h3>
+          </div>
+          <div class="card-body">
+            <h2>$99 / mes</h2>
+            <p>Prioridad en el listado</p>
+            <p>Matches Ilimitados</p>
+            <p>Mensajes Ilimitados</p>
+            <p>Uso ilimitado de la aplicación</p>
+            <button type="button" class="btn btn-lg btn-block btn-dark">Inscríbete</button>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+
+  </section>
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3>Encuentre hoy el verdadero amor de la vida de su perro.</h3>
+    <button type="button">Descarga</button>
+    <button type="button">Descarga</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+
+    <p>© Copyright 2021 TinDog</p>
+
+  </footer>
+
+
+</body>
+
+</html>
