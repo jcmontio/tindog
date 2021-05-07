@@ -58,7 +58,7 @@
 
     <div class="row">
       <div class="col-lg-6">
-        <h1>Conozca nuevos e interesantes perros cerca de ti.</h1>
+        <h1 class="big-heading">Conozca nuevos e interesantes perros cerca de ti.</h1>
         <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-android"></i> Descarga</button>
         <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Descarga</button>
       </div>
@@ -78,25 +78,25 @@
     <!-- Para aplicar el grid de bootstrap es necesario que todos los div esten en una misma fila. 
     Para pantallas grandes como la de un PC (col-lg-4 significa que se va a dividir la fila en 
     12/4=3 columnas) -->
-
-    <div class="row">
-      <div class="feature-box col-lg-4">
-        <i class="icon fas fa-check-circle fa-4x"></i>
-        <h3>Fácil de usar.</h3>
-        <p>Es tan fácil de usar que hasta tu perro podría hacerlo.</p>
-      </div>
-      <div class="feature-box col-lg-4">
-        <i class="icon fas fa-bullseye fa-4x"></i>
-        <h3>Clientela de élite.</h3>
-        <p>Tenemos todos los perros, los mejores perros.</p>
-      </div>
-      <div class="feature-box col-lg-4">
-        <i class="icon fas fa-heart fa-4x"></i>
-        <h3>Se garantiza su funcionamiento.</h3>
-        <p>Encuentre el amor de la vida de su perro o le devolvemos su dinero.</p>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-check-circle fa-4x"></i>
+          <h3 class="feature-title">Fácil de usar.</h3>
+          <p>Es tan fácil de usar que hasta tu perro podría hacerlo.</p>
+        </div>
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-bullseye fa-4x"></i>
+          <h3 class="feature-title">Clientela de élite.</h3>
+          <p>Tenemos todos los perros, los mejores perros.</p>
+        </div>
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-heart fa-4x"></i>
+          <h3 class="feature-title">Se garantiza su funcionamiento.</h3>
+          <p>Encuentre el amor de la vida de su perro o le devolvemos su dinero.</p>
+        </div>
       </div>
     </div>
-
   </section>
 
   <!-- Testimonials -->
@@ -114,12 +114,12 @@
 
     <div id="testimonial-carousel" class="carousel slide" data-ride="false">
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <h2>Ya no tengo que olfatear a otros perros en busca de amor. He encontrado el Corgi más caliente en TinDog. Guau.</h2>
+        <div class="carousel-item active container-fluid">
+          <h2 class="testimonial-text">Ya no tengo que olfatear a otros perros en busca de amor. He encontrado el Corgi más caliente en TinDog. Guau.</h2>
           <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
           <em>Pebbles, New York.</em>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item container-fluid">
           <h2 class="testimonial-text">Mi perro solía ser tan solitario, pero con la ayuda de TinDog, ha encontrado el amor de su vida. Yo creo.</h2>
           <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
           <em>Beverly, Illinois</em>
@@ -150,7 +150,7 @@
 
   <section id="pricing">
 
-    <h2>Un plan para las necesidades de cada perro</h2>
+    <h2 class="section-heading">Un plan para las necesidades de cada perro</h2>
     <p>Planes de precios sencillos y asequibles para usted y su perro.</p>
 
     <div class="row">
@@ -161,7 +161,7 @@
             <h3>Chihuahua</h3>
           </div>
           <div class="card-body">
-            <h2>Gratis</h2>
+            <h2 class="price-text">Gratis</h2>
             <p>5 Matches Por Día</p>
             <p>10 Mensajes Por Día</p>
             <p>Uso ilimitado de la aplicación</p>
@@ -177,7 +177,7 @@
             <h3>Labrador</h3>
           </div>
           <div class="card-body">
-            <h2>$49 / mes</h2>
+            <h2 class="price-text">$49 / mes</h2>
             <p>Matches Ilimitados</p>
             <p>Mensajes Ilimitados</p>
             <p>Uso ilimitado de la aplicación</p>
@@ -191,7 +191,7 @@
             <h3>Mastiff</h3>
           </div>
           <div class="card-body">
-            <h2>$99 / mes</h2>
+            <h2 class="price-text">$99 / mes</h2>
             <p>Prioridad en el listado</p>
             <p>Matches Ilimitados</p>
             <p>Mensajes Ilimitados</p>
@@ -208,22 +208,24 @@
   <!-- Call to Action -->
 
   <section id="cta">
-
-    <h3 class="cta-heading">Encuentre hoy el verdadero amor de la vida de su perro.</h3>
-    <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-android"></i> Descarga</button>
-    <button type="button" class="btn btn-light btn-lg download-button"><i class="fab fa-google-play"></i> Descarga</button>
-
+    <div class="container-fluid">
+      <h3 class="big-heading">Encuentre hoy el verdadero amor de la vida de su perro.</h3>
+      <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-android"></i> Descarga</button>
+      <button type="button" class="btn btn-light btn-lg download-button"><i class="fab fa-google-play"></i> Descarga</button>
+    </div>
   </section>
 
 
   <!-- Footer -->
 
   <footer id="footer">
-    <i class="social-icon fab fa-facebook-f"></i>
-    <i class="social-icon fab fa-twitter"></i>
-    <i class="social-icon fab fa-instagram"></i>
-    <i class="social-icon fas fa-envelope"></i>
-    <p>© Copyright 2021 TinDog</p>
+    <div class="container-fluid">
+      <i class="social-icon fab fa-facebook-f"></i>
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <i class="social-icon fas fa-envelope"></i>
+      <p>© Copyright 2021 TinDog</p>
+    </div>
   </footer>
 
 
